@@ -102,7 +102,7 @@ namespace Northwind.Controllers
                         cookie.Value = "customer";
                         cookie.Values.Add("type", customer.Role.ToString());
                         Response.Cookies.Add(cookie);
-
+                        
                         if (ReturnUrl != null)
                         {
                             return Redirect(ReturnUrl);
